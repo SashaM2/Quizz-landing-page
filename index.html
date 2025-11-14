@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o Seu Perfil Exclusivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de Progresso Fixa -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+        <div class="progress-text" id="progressText">0%</div>
+    </div>
+
+    <!-- Página 1: Abertura + Primeira Pergunta -->
+    <div class="page active" id="page1">
+        <div class="container">
+            <h1 class="headline">Descubra o Seu Perfil Exclusivo</h1>
+            <p class="subheadline">Em apenas 5 perguntas, vamos revelar o que realmente te move</p>
+            
+            <div class="question-container">
+                <h2 class="question">Qual é o seu maior objetivo no momento?</h2>
+                <div class="options">
+                    <button class="option-btn" data-value="crescimento">Crescer profissionalmente</button>
+                    <button class="option-btn" data-value="equilibrio">Encontrar equilíbrio vida-trabalho</button>
+                    <button class="option-btn" data-value="independencia">Conquistar independência financeira</button>
+                    <button class="option-btn" data-value="impacto">Criar impacto positivo no mundo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 2: Pergunta 2 -->
+    <div class="page" id="page2">
+        <div class="container">
+            <div class="feedback-message">✨ Boa escolha! Vamos para a próxima...</div>
+            <div class="question-container">
+                <h2 class="question">Como você prefere aprender coisas novas?</h2>
+                <div class="options">
+                    <button class="option-btn" data-value="pratico">Fazendo na prática</button>
+                    <button class="option-btn" data-value="teorico">Estudando teoria primeiro</button>
+                    <button class="option-btn" data-value="misturado">Misturando teoria e prática</button>
+                    <button class="option-btn" data-value="experiencia">Com experiência de outros</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 3: Pergunta 3 -->
+    <div class="page" id="page3">
+        <div class="container">
+            <div class="question-container">
+                <h2 class="question">O que mais te motiva quando as coisas ficam difíceis?</h2>
+                <div class="options">
+                    <button class="option-btn" data-value="familia">Pensar na minha família</button>
+                    <button class="option-btn" data-value="futuro">Visualizar o futuro que quero</button>
+                    <button class="option-btn" data-value="desafio">O desafio em si me energiza</button>
+                    <button class="option-btn" data-value="legado">Deixar um legado importante</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 4: Pergunta 4 -->
+    <div class="page" id="page4">
+        <div class="container">
+            <div class="question-container">
+                <h2 class="question">Qual ambiente te faz render mais?</h2>
+                <div class="options">
+                    <button class="option-btn" data-value="solitario">Trabalhando sozinho</button>
+                    <button class="option-btn" data-value="equipe">Em equipe colaborativa</button>
+                    <button class="option-btn" data-value="flexivel">Ambiente flexível e adaptável</button>
+                    <button class="option-btn" data-value="estruturado">Ambiente estruturado e organizado</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 5: Pergunta 5 -->
+    <div class="page" id="page5">
+        <div class="container">
+            <div class="question-container">
+                <h2 class="question">O que você mais valoriza em uma oportunidade?</h2>
+                <div class="options">
+                    <button class="option-btn" data-value="liberdade">Liberdade e autonomia</button>
+                    <button class="option-btn" data-value="seguranca">Segurança e estabilidade</button>
+                    <button class="option-btn" data-value="crescimento">Potencial de crescimento</button>
+                    <button class="option-btn" data-value="impacto">Impacto e propósito</button>
+                </div>
+            </div>
+            <div class="motivational-message">🎯 Você está quase lá! Última pergunta...</div>
+        </div>
+    </div>
+
+    <!-- Página 6: Validação -->
+    <div class="page" id="page6">
+        <div class="container">
+            <div class="validation-container">
+                <h2 class="validation-title">Estamos analisando as suas respostas...</h2>
+                <div class="loader">
+                    <div class="loader-bar"></div>
+                </div>
+                <div class="trust-messages">
+                    <p class="trust-message active">✨ Processando seu perfil único...</p>
+                    <p class="trust-message">🔍 Identificando seus pontos fortes...</p>
+                    <p class="trust-message">💎 Criando resultado personalizado...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 7: Pré-resultado -->
+    <div class="page" id="page7">
+        <div class="container">
+            <div class="pre-result-container">
+                <h2 class="pre-result-title">Pronto! Temos o seu perfil...</h2>
+                <div class="strengths-summary">
+                    <h3>Seus pontos fortes identificados:</h3>
+                    <ul class="strengths-list" id="strengthsList">
+                        <!-- Preenchido dinamicamente -->
+                    </ul>
+                </div>
+                <div class="mental-triggers">
+                    <p class="trigger-text">🎯 Você tem um perfil único e poderoso</p>
+                    <p class="trigger-text">💪 Suas respostas revelam potencial extraordinário</p>
+                    <p class="trigger-text">🚀 Está pronto para descobrir o resultado completo?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 8: Resultado Final + CTA -->
+    <div class="page" id="page8">
+        <div class="container">
+            <div class="result-container">
+                <div class="result-badge" id="resultBadge">
+                    <!-- Preenchido dinamicamente -->
+                </div>
+                <h2 class="result-title" id="resultTitle"></h2>
+                <div class="result-description" id="resultDescription"></div>
+                <div class="result-details" id="resultDetails"></div>
+                
+                <div class="cta-container">
+                    <p class="cta-text">🎁 <strong>Oferta Especial:</strong> Acesso completo ao seu perfil detalhado + plano de ação personalizado</p>
+                    <a href="https://wa.me/5511999999999?text=Quero%20acessar%20meu%20perfil%20completo!" class="cta-button" id="ctaButton" target="_blank">
+                        🚀 Quero Meu Perfil Completo Agora
+                    </a>
+                    <p class="cta-subtext">⚡ Acesso imediato via WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://quizaap.onrender.com/api/tracker/a5735d820d9c4d8d9e0039e671f848e8.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
